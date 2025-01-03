@@ -13,12 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Highlight the additional information section on hover
     const extrasSection = document.querySelector('.character-extras');
     extrasSection.addEventListener('mouseover', () => {
-        extrasSection.style.backgroundColor = '#f0f8ff';
+        extrasSection.style.backgroundColor = getComputedStyle(document.documentElement)
+            .getPropertyValue('--heading-color').trim(); // Use heading color for hover
         extrasSection.style.transition = 'background-color 0.3s ease';
     });
 
     extrasSection.addEventListener('mouseout', () => {
-        extrasSection.style.backgroundColor = 'white';
+        extrasSection.style.backgroundColor = getComputedStyle(document.documentElement)
+            .getPropertyValue('--card-background').trim(); // Use card background as default
     });
 
     // Add smooth scrolling back to the top
