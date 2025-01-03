@@ -179,10 +179,13 @@ section {
 }
 
 .info-overlay .character-name {
+    font-family: 'Bebas Neue', sans-serif;
     margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 2rem;
     transform: uppercase;
     color: var(--heading-color);
+    z-index: 10;
+    position: relative;
 }
 
 .info-overlay::-webkit-scrollbar {
