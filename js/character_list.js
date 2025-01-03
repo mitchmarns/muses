@@ -16,15 +16,15 @@ fetch('./characters.json')
                 <div class="image-container">
                     <img src="${character.imageUrl}" alt="${character.name}">
                     <div class="info-overlay">
-                        <h3>${character.name}</h3>
-                        <ul class="character-details">
-                            <li><strong>Age:</strong> ${character.age}</li>
-                            <li><strong>Occupation:</strong> ${character.occupation}</li>
-                            <li><strong>Hometown:</strong> ${character.hometown}</li>
-                            <li><strong>Sexuality:</strong> ${character.sexuality}</li>
-                            <li><strong>Pronouns:</strong> ${character.pronouns}</li>
-                        </ul>
-                        <a href="${character.moreLink}" class="view-more">View More</a>
+                        <h3 class="character-name">${character.name}</h3>
+                        <table class="character-details">
+                            <tr><td><strong>AGE:</strong></td><td>${character.age}</td></tr>
+                            <tr><td><strong>OCCUPATION:</strong></td><td>${character.occupation.toUpperCase()}</td></tr>
+                            <tr><td><strong>HOMETOWN:</strong></td><td>${character.hometown.toUpperCase()}</td></tr>
+                            <tr><td><strong>SEXUALITY:</strong></td><td>${character.sexuality.toUpperCase()}</td></tr>
+                            <tr><td><strong>PRONOUNS:</strong></td><td>${character.pronouns.toUpperCase()}</td></tr>
+                        </table>
+                        <a href="${character.moreLink}" class="view-more">VIEW MORE</a>
                     </div>
                 </div>
             `;
