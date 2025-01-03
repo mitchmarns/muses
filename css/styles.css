@@ -20,11 +20,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: #ff7f50; /* Coral */
+    color: #f8b8d1; /* Soft Pink */
 }
 
 a:hover {
-    color: #ffa07a; /* Light coral */
+    color: #ff99c8; /* Light soft pink */
 }
 
 /* Navbar Styles */
@@ -37,7 +37,7 @@ a:hover {
 
 .navbar h1 {
     font-size: 2.5rem;
-    color: #ff7f50;
+    color: #f8b8d1; /* Soft Pink */
 }
 
 .nav-links {
@@ -57,7 +57,7 @@ a:hover {
 }
 
 .nav-links a:hover {
-    color: #ffa07a;
+    color: #ff99c8; /* Light soft pink */
 }
 
 /* Banner Styles */
@@ -89,7 +89,6 @@ section {
 }
 
 /* Character Page */
-
 #character-container {
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +114,7 @@ section {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 2px solid #ff7f50;
+    border: 2px solid #f8b8d1; /* Soft Pink */
 }
 
 .character-card h3 {
@@ -137,7 +136,7 @@ section {
 
 .view-more {
     text-decoration: none;
-    color: #ffa07a;
+    color: #ff99c8; /* Light soft pink */
     font-weight: bold;
 }
 
@@ -158,7 +157,7 @@ section {
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
-    border: 3px solid #ff7f50;
+    border: 3px solid #f8b8d1; /* Soft Pink */
 }
 
 .character-details {
@@ -184,6 +183,7 @@ section {
 .character-extras h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #f8b8d1; /* Soft Pink */
 }
 
 .character-extras p {
