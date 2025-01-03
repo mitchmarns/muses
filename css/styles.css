@@ -178,6 +178,13 @@ section {
     color: var(--heading-color);
 }
 
+.info-overlay .character-name {
+    margin-bottom: 10px;
+    font-size: 2em;
+    transform: uppercase;
+    color: var(--heading-color);
+}
+
 .info-overlay::-webkit-scrollbar {
     width: 8px;
 }
