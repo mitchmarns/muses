@@ -1,13 +1,13 @@
 /* Define the color palette */
 :root {
     --background-color: #645F69; /* Dark neutral gray for background */
-    --card-background: #8EB592; /* Muted green for card background */
+    --card-background: #4D4952; /* Muted green for card background */
     --text-color: #F1F6FC; /* Soft off-white for main text */
     --heading-color: #F3C12D; /* Golden yellow for headings */
     --accent-color: #F9A59F; /* Soft pink for subtle accents */
     --link-color: #F9A59F; /* Soft pink for links */
     --link-hover-color: #F3C12D; /* Golden yellow for link hover */
-    --navbar-background: #645F69; /* Dark neutral gray for navbar */
+    --navbar-background: #4D4952; /* Dark neutral gray for navbar */
     --navbar-border: #F3C12D; /* Golden yellow for navbar border */
     --footer-background: #645F69; /* Dark neutral gray for footer */
 }
