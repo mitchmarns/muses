@@ -120,6 +120,7 @@ section {
     height: 250px; /* Make it square */
     border-radius: 8px;
     overflow: hidden;
+    text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background-color: var(--card-background);
 }
@@ -152,7 +153,7 @@ section {
     opacity: 0;
     transition: opacity 0.3s ease;
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .character-card img {
@@ -177,11 +178,21 @@ section {
     color: var(--heading-color);
 }
 
+.character-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+}
+
 .character-details {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 0.9em;
+    font-family: "Montserrat", serif;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    width: 100%;
+    border-spacing: 5px;
+}
+
+.character-details td {
+    padding: 2px 5px;
 }
 
 .character-details li {
@@ -191,6 +202,7 @@ section {
 .view-more {
     margin-top: 10px;
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--accent-color);
     font-weight: bold;
 }
