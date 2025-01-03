@@ -178,7 +178,7 @@ section {
     color: var(--heading-color);
 }
 
-.info-overlay .character-name {
+.info-overlay h3.character-name {
     font-family: 'Bebas Neue', sans-serif;
     margin-bottom: 10px;
     font-size: 2rem;
