@@ -1,16 +1,15 @@
-/* Define color variables */
+/* Define the color palette */
 :root {
-    --background-color: #121212;
-    --text-color: #eaeaea;
-    --heading-color: #ffffff;
-    --link-color: #f8b8d1;
-    --link-hover-color: #ff99c8;
-    --navbar-background: #242424;
-    --navbar-border: #555;
-    --card-background: #2c2c2c;
-    --image-border-color: #333;
-    --footer-background: #222;
-    --accent-color: #f8b8d1;
+    --background-color: #645F69; /* Dark neutral gray */
+    --text-color: #F1F6FC; /* Soft off-white */
+    --heading-color: #F3C12D; /* Golden yellow for headings */
+    --link-color: #F9A59F; /* Soft pink */
+    --link-hover-color: #F3C12D; /* Golden yellow */
+    --navbar-background: #8EB592; /* Soft green */
+    --navbar-border: #F3C12D; /* Golden yellow */
+    --card-background: #8EB592; /* Soft green for cards */
+    --image-border-color: #F1F6FC; /* Soft off-white */
+    --footer-background: #8EB592; /* Soft green */
 }
 
 /* Global Styles */
@@ -52,7 +51,7 @@ a:hover {
 
 .navbar h1 {
     font-size: 2.5rem;
-    color: var(--accent-color);
+    color: var(--link-color);
 }
 
 .nav-links {
@@ -80,7 +79,7 @@ a:hover {
     position: relative;
     height: 350px;
     background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
-    color: var(--heading-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +103,7 @@ section {
 }
 
 /* Character Page */
+
 #character-container {
     display: flex;
     flex-wrap: wrap;
@@ -157,53 +157,6 @@ section {
 
 .view-more:hover {
     text-decoration: underline;
-}
-
-.character-profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    text-align: center;
-}
-
-.character-profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    border: 3px solid var(--image-border-color);
-}
-
-.character-details {
-    list-style: none;
-    padding: 0;
-    font-size: 1em;
-}
-
-.character-details li {
-    margin-bottom: 5px;
-}
-
-.character-extras {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: var(--card-background);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    color: var(--text-color);
-}
-
-.character-extras h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: var(--accent-color);
-}
-
-.character-extras p {
-    font-size: 1em;
-    line-height: 1.6;
 }
 
 /* Footer Styles */
