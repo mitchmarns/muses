@@ -201,7 +201,7 @@ section {
 
 /* Profile Image Hover Effect */
 .character-profile img {
-    width: 100%;
+    width: 250px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
