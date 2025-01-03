@@ -13,16 +13,20 @@ fetch('./characters.json')
             card.classList.add('character-card');
 
             card.innerHTML = `
-                <img src="${character.imageUrl}" alt="${character.name}">
-                <h3>${character.name}</h3>
-                <ul class="character-details">
-                    <li><strong>Age:</strong> ${character.age}</li>
-                    <li><strong>Occupation:</strong> ${character.occupation}</li>
-                    <li><strong>Hometown:</strong> ${character.hometown}</li>
-                    <li><strong>Sexuality:</strong> ${character.sexuality}</li>
-                    <li><strong>Pronouns:</strong> ${character.pronouns}</li>
-                </ul>
-                <a href="${character.moreLink}" class="view-more">View More</a>
+                <div class="image-container">
+                    <img src="${character.imageUrl}" alt="${character.name}">
+                    <div class="info-overlay">
+                        <h3>${character.name}</h3>
+                        <ul class="character-details">
+                            <li><strong>Age:</strong> ${character.age}</li>
+                            <li><strong>Occupation:</strong> ${character.occupation}</li>
+                            <li><strong>Hometown:</strong> ${character.hometown}</li>
+                            <li><strong>Sexuality:</strong> ${character.sexuality}</li>
+                            <li><strong>Pronouns:</strong> ${character.pronouns}</li>
+                        </ul>
+                        <a href="${character.moreLink}" class="view-more">View More</a>
+                    </div>
+                </div>
             `;
 
             container.appendChild(card);
