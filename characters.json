@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Taylor Abbott",
+        "age": 23,
+        "occupation": "professional hockey player",
+        "hometown": "Cambridge, MA",
+        "sexuality": "Gay",
+        "pronouns": "He/Him",
+        "imageUrl": "https://i.pinimg.com/736x/34/dc/af/34dcaff4176ca67aec0f114e6740d668.jpg",
+        "moreLink": "taylor.html"
+    },
+    {
+        "name": "Declan Thorne",
+        "age": 27,
+        "occupation": "professional hockey player",
+        "hometown": "Thunter Bay, ON",
+        "sexuality": "Bisexual",
+        "pronouns": "He/Him",
+        "imageUrl": "https://i.pinimg.com/736x/75/9a/a4/759aa48ae5a93a3f1de044844a6062cb.jpg",
+        "moreLink": "declan.html"
+    },
+    {
+        "name": "Asher Wilde",
+        "age": 28,
+        "occupation": "NHL scout",
+        "hometown": "Toronto, ON",
+        "sexuality": "Bisexual",
+        "pronouns": "He/Him",
+        "imageUrl": "https://i.pinimg.com/736x/b3/a7/ce/b3a7ced18605584de49590a6f389ff10.jpg",
+        "moreLink": "asher.html"
+    }
+]
