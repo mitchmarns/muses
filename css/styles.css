@@ -199,6 +199,31 @@ section {
     text-decoration: underline;
 }
 
+/* Profile Image Hover Effect */
+.character-profile img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-profile img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Additional Information Section */
+.character-extras {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--card-background); /* Use darker background for consistency */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-extras:hover {
+    background-color: var(--heading-color); /* Accent color for hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* Footer Styles */
 footer {
     background-color: var(--footer-background);
