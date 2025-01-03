@@ -3,68 +3,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    background-color: #fafafa; /* Light neutral background */
+    color: #2c2c2c; /* Dark gray for readability */
+    line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Georgia', serif;
-    font-weight: bold;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #333; /* Slightly darker for headers */
 }
 
 a {
     text-decoration: none;
     color: #333;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ff7f50;
+    color: #d66a50; /* Soft coral hover effect */
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #fff;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 20px 0;
     text-align: center;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 1px solid #eee;
 }
 
 .navbar h1 {
-    font-size: 2.5rem;
-    color: #222;
+    font-size: 2rem;
+    color: #2c2c2c;
+    margin-bottom: 10px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-links li {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .nav-links a {
-    color: #333;
-    transition: color 0.3s ease;
+    color: #666;
 }
 
 .nav-links a:hover {
-    color: #ff7f50;
+    color: #d66a50;
 }
 
 /* Banner Styles */
 .banner {
     position: relative;
-    height: 350px;
+    height: 300px;
     background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,19 +74,18 @@ a:hover {
 }
 
 .banner-content h2 {
-    font-size: 3rem;
-    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* Main Section Styles */
 main {
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 /* Character Page */
@@ -93,30 +94,37 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
 }
 
 .character-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    padding: 25px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .character-card img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #eee;
 }
 
 .character-card h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 10px;
 }
 
@@ -134,11 +142,14 @@ section {
 
 .view-more {
     text-decoration: none;
-    color: #007BFF;
+    color: #0077cc;
     font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
 }
 
 .view-more:hover {
+    color: #004c99;
     text-decoration: underline;
 }
 
@@ -152,9 +163,10 @@ section {
 
 .character-profile img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 15px;
+    border: 3px solid #f5f5f5;
 }
 
 .character-details {
@@ -163,40 +175,36 @@ section {
     font-size: 1em;
 }
 
-.character-details li {
-    margin-bottom: 5px;
-}
-
 .character-extras {
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px;
     max-width: 600px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .character-extras h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #444;
 }
 
 .character-extras p {
     font-size: 1em;
-    line-height: 1.6;
+    line-height: 1.8;
+    color: #555;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #111;
+    color: #eeeeee;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 15px 0;
+    font-size: 0.9rem;
 }
 
 footer p {
-    font-size: 1rem;
+    margin: 0;
 }
