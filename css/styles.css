@@ -167,11 +167,6 @@ section {
     display: block;
 }
 
-.character-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
 .character-card:hover .info-overlay {
     opacity: 1;
     transform: translateY(0);
