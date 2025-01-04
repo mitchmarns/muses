@@ -1,13 +1,42 @@
-fetch('./characters.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Failed to load character data.');
+document.addEventListener('DOMContentLoaded', () => {
+    const characters = [
+        {
+            "name": "Taylor Abbott",
+            "age": 23,
+            "occupation": "professional hockey player",
+            "hometown": "Cambridge, MA",
+            "sexuality": "Gay",
+            "pronouns": "He/Him",
+            "imageUrl": "https://i.pinimg.com/736x/34/dc/af/34dcaff4176ca67aec0f114e6740d668.jpg",
+            "moreLink": "characters/taylor.html"
+        },
+        {
+            "name": "Declan Thorne",
+            "age": 27,
+            "occupation": "professional hockey player",
+            "hometown": "Thunder Bay, ON",
+            "sexuality": "Bisexual",
+            "pronouns": "He/Him",
+            "imageUrl": "https://i.pinimg.com/736x/75/9a/a4/759aa48ae5a93a3f1de044844a6062cb.jpg",
+            "moreLink": "characters/declan.html"
+        },
+        {
+            "name": "Asher Wilde",
+            "age": 28,
+            "occupation": "NHL scout",
+            "hometown": "Toronto, ON",
+            "sexuality": "Bisexual",
+            "pronouns": "He/Him",
+            "imageUrl": "https://i.pinimg.com/736x/b3/a7/ce/b3a7ced18605584de49590a6f389ff10.jpg",
+            "moreLink": "characters/asher.html"
         }
-        return response.json();
-    })
-    .then(characters => {
-        const container = document.getElementById('character-container');
+    ];
 
+    const container = document.getElementById('character-container');
+
+    // Function to display characters
+    const displayCharacters = (characters) => {
+        container.innerHTML = ''; // Clear existing cards
         characters.forEach(character => {
             const card = document.createElement('div');
             card.classList.add('character-card');
@@ -31,7 +60,11 @@ fetch('./characters.json')
 
             container.appendChild(card);
         });
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+    };
+
+    // Sort characters alphabetically by name
+    const sortedCharacters = characters.sort((a, b) => a.name.localeCompare(b.name));
+
+    // Display sorted characters
+    displayCharacters(sortedCharacters);
+});
