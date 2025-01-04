@@ -10,6 +10,7 @@
     --navbar-background: #362D39; 
     --navbar-border: #7C8371; 
     --footer-background: #28212A; 
+    --gradient-color: linear-gradient(90deg, rgba(158,120,143,1) 5%, rgba(124,131,113,1) 83%);
 }
 
 /* Global Styles */
@@ -185,6 +186,15 @@ section {
     padding: 2px 5px;
 }
 
+.character-stats {
+    font-family: "Montserrat", serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    width: 100%;
+    border-spacing: 5px;
+    padding-left: 30px;
+}
+
 .character-card .character-details td:first-child {
     background: linear-gradient(90deg, rgba(158,120,143,1) 5%, rgba(124,131,113,1) 83%); 
     color: var(--text-color);
@@ -211,26 +221,127 @@ section {
 }
 
 /* Profile Image Hover Effect */
+.character-profile {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
 .character-profile img {
     width: 250px;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.character-profile img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+/* Container for the tabs */
+#tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-/* Additional Information Section */
-.character-extras {
-    padding: 15px;
-    border-radius: 8px;
-    background-color: var(--card-background); /* Use darker background for consistency */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+/* Tabs themselves */
+.tabs {
+    display: flex;
+    gap: 10px;
 }
 
-.character-extras:hover {
-    background-color: var(--heading-color); /* Accent color for hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+/* Individual tab buttons */
+.tab {
+    padding: 10px 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--card-background); /* Use your neutral color or background */
+    color: var(--heading-color); /* Color for tab text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Active tab button style */
+.tab.active {
+    background: linear-gradient(90deg, rgba(158,120,143,1) 5%, rgba(124,131,113,1) 83%); /* Gradient effect for active tab */
+    color: #fff;
+}
+
+/* Tab hover effect */
+.tab:hover {
+    background-color: var(--accent-color); /* Adjust to a highlight color if defined */
+}
+
+/* Hide all tab content by default */
+.tab-content {
+    flex: 1;
+    padding: 20px;
+    border-top: 2px solid var(--heading-color);
+    background-color: var(--card-background);
+    display: none;
+}
+
+/* Show the active tab content */
+.tab-content.active {
+    display: block;
+}
+
+/* Container for sidebar and content */
+.content-wrapper {
+    display: flex;
+}
+
+/* Sidebar for image */
+.sidebar {
+    flex: 0 0 260px; /* Adjust width as needed */
+    margin-right: 20px;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 8px; /* Optional rounded corners */
+    object-fit: cover;
+}
+
+.spotify-embed {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.spotify-embed h3 {
+    padding: 5px 10px;
+    margin: 0;
+    color: var(--text-color);
+    background: var(--gradient-color);
+}
+
+.character-info {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack vertically */
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    gap: 5px;
+}
+
+.label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--text-color); 
+    background: var(--gradient-color); 
+    padding: 2px 5px; 
+    display: inline-block;
+    width: 50%;
+    height:30px;
+    box-sizing: border-box;
+}
+
+.value {
+    font-size: .85rem;
+    color: var(--text-color); /* Customize text color */
 }
