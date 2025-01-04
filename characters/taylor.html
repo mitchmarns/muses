@@ -19,22 +19,69 @@
     </header>
 
     <main>
-        <section class="character-profile">
+    <section id="tab-container">
+        <div class="tabs">
+            <button class="tab active" data-tab="stats">stats</button>
+            <button class="tab" data-tab="bio">biography</button>
+            <button class="tab" data-tab="connections">connections</button>
+        </div>
+    </section>
+
+    <div class="content-wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
             <img src="https://i.pinimg.com/736x/34/dc/af/34dcaff4176ca67aec0f114e6740d668.jpg" alt="Taylor Abbott">
-            <h2>Taylor Abbott</h2>
-            <ul class="character-details">
-                <li><strong>Age:</strong> 23</li>
-                <li><strong>Occupation:</strong> professional hockey player</li>
-                <li><strong>Hometown:</strong> cambridge, ma</li>
-                <li><strong>Sexuality:</strong> gay</li>
-                <li><strong>Pronouns:</strong> he/him</li>
-            </ul>
-        </section>
-        <section class="character-extras">
+          
+          <div class="spotify-embed">
+        <h3>Listen on Spotify</h3>
+        <!-- Embed code from Spotify -->
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5mm62IZlGuynlpW83VELAE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+        </div>
+
+        <!-- Tab content sections -->
+        <div class="tab-content active" id="stats">
+    <div class="character-info">
+        <div class="info-grid">
+    <div class="info-item">
+        <span class="label">Age</span> <span class="value">23</span>
+    </div>
+    <div class="info-item">
+        <span class="label">Occupation</span> <span class="value">professional hockey player</span>
+    </div>
+    <div class="info-item">
+        <span class="label">Hometown</span> <span class="value">cambridge, ma</span>
+    </div>
+    <div class="info-item">
+        <span class="label">Sexuality</span> <span class="value">gay</span>
+    </div>
+    <div class="info-item">
+        <span class="label">pronouns</span> <span class="value">he/him</span>
+    </div>
+    <div class="info-item">
+        <span class="label">birthday</span> <span class="value">here</span>
+    </div>
+    <div class="info-item">
+        <span class="label">spoken languages</span> <span class="value">english</span>
+    </div>
+        <div class="info-item">
+        <span class="label">face claim</span> <span class="value">trevor zegras</span>
+    </div>
+        <div class="info-item">
+        <span class="label">height</span> <span class="value">here</span>
+    </div>
+      </div>
+          </div></div>
+        <div class="tab-content" id="bio">
             <h3>Additional Information</h3>
-            <p>Lorem ipsum dolor sit met, consectetur adipiscing elit. Quisque feugiat mauris non urna malesuada, at placerat eros venenatis.</p>
-        </section>
-    </main>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="tab-content" id="connections">
+            <h3>connections</h3>
+            <p>Coming soon...</p>
+        </div>
+    </div>
+</main>
 
     <script src="../js/view_more.js"></script>
 </body>
