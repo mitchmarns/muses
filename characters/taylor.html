@@ -1,29 +1,31 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor Abbott</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/08698b12f5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <h1>Taylor Abbott</h1>
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../character_list.html">Character List</a></li>
+              <li><a href="../index.html"><icon><i class="fa-solid fa-house"></icon></i>Home</a></li>
+              <li><a href="../character_list.html"><icon><i class="fa-solid fa-bars"></i></icon>Character List</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+      <div class="name-banner">taylor abbott</div>
     <section id="tab-container">
         <div class="tabs">
             <button class="tab active" data-tab="stats">stats</button>
             <button class="tab" data-tab="bio">biography</button>
             <button class="tab" data-tab="connections">connections</button>
+            <button class="tab" data-tab="instagram">instagram</button>
         </div>
     </section>
 
@@ -78,7 +80,50 @@
         </div>
         <div class="tab-content" id="connections">
             <h3>connections</h3>
-            <p>Coming soon...</p>
+            <div class="connections-list">
+            <!-- Example Connection 1 -->
+            <div class="connection">
+                <img src="https://i.pinimg.com/736x/df/51/41/df5141c9b7efd896d075bf09fec91150.jpg" alt="Character 1">
+                <div class="connection-info">
+                    <h4>chase love</h4>
+                    <p>Relationship: Best Friend</p>
+                    <p>Details: Shared many childhood memories.</p>
+                </div>
+            </div>
+
+            <!-- Example Connection 2 -->
+            <div class="connection">
+                <img src="https://via.placeholder.com/50" alt="Character 2">
+                <div class="connection-info">
+                    <h4>Character 2</h4>
+                    <p>Relationship: Rival</p>
+                    <p>Details: A long-standing competitive rivalry on the ice.</p>
+                </div>
+            </div>
+
+            <!-- More connections as needed -->
+        </div>
+        </div>
+        <div class="tab-content" id="instagram">
+          
+        <div id="igheader">instagram</div>
+
+        <div id="instagram-gallery">
+          
+            <img src="https://i.pinimg.com/736x/79/44/ad/7944ad0fa57913601c009ad3be699897.jpg" alt="Image 1">
+            <img src="https://i.pinimg.com/736x/96/2e/8e/962e8e32e7c906224709b6c815b5a4b5.jpg" alt="Image 2">
+            <img src="https://i.pinimg.com/736x/0a/2d/41/0a2d4166487f667571c0af699679b5eb.jpg" alt="Image 3">
+            <img src="https://i.pinimg.com/736x/f2/07/be/f207be54a975dc09fa5a30263c05f2b5.jpg" alt="Image 4">
+            <!-- Add more images as needed -->
+          </div>
+          
+       <!-- Modal structure for popup -->
+       <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+      
+         
         </div>
     </div>
 </main>
