@@ -1,12 +1,12 @@
 /* Define the color palette */
 :root {
     --background-color: #28212A; 
-    --card-background: #362D39; 
+    --card-background: #28212A; 
     --text-color: #E8E4DF; 
     --heading-color: #7C8371; 
     --accent-color: #7C8371; 
-    --link-color: #BA6E6E; 
-    --link-hover-color: #BA6E6E; 
+    --link-color: #CD5D67; 
+    --link-hover-color: #CD5D67; 
     --navbar-background: #362D39; 
     --navbar-border: #7C8371; 
     --footer-background: #28212A; 
@@ -116,8 +116,8 @@ section {
 
 .character-card {
     position: relative;
-    width: 250px; /* Adjust to your preferred size */
-    height: 250px; /* Make it square */
+    width: 270px; /* Adjust to your preferred size */
+    height: 270px; /* Make it square */
     border-radius: 8px;
     overflow: hidden;
     text-align: left;
@@ -139,32 +139,27 @@ section {
 }
 
 .info-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark overlay */
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    padding: 10px;
-    text-align: left;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-    overflow-y: auto; /* Enables scrolling */
-}
-
-.character-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40,33, 42, 0.8);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
 .character-card:hover .info-overlay {
@@ -174,42 +169,13 @@ section {
 
 .info-overlay h3 {
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 2em;
     color: var(--heading-color);
-}
-
-.info-overlay h3.character-name {
-    font-family: 'Bebas Neue', sans-serif;
-    margin-bottom: 10px;
-    font-size: 2rem;
-    transform: uppercase;
-    color: var(--heading-color);
-    z-index: 10;
-    position: relative;
-}
-
-.info-overlay::-webkit-scrollbar {
-    width: 8px;
-}
-
-.info-overlay::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 4px;
-}
-
-.info-overlay::-webkit-scrollbar-thumb:hover {
-    background: #aaa;
-}
-
-.character-name {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 10px;
 }
 
 .character-details {
     font-family: "Montserrat", serif;
-    font-size: 0.875em;
+    font-size: 0.8em;
     text-transform: uppercase;
     width: 100%;
     border-spacing: 5px;
@@ -219,8 +185,17 @@ section {
     padding: 2px 5px;
 }
 
-.character-details li {
-    margin-bottom: 5px;
+.character-card .character-details td:first-child {
+    background: linear-gradient(90deg, rgba(158,120,143,1) 5%, rgba(124,131,113,1) 83%); 
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px; 
+}
+
+.character-card .character-details td:last-child {
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0; 
+    color: var(--text-color);
 }
 
 .view-more {
@@ -229,7 +204,6 @@ section {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--accent-color);
-    font-weight: bold;
 }
 
 .view-more:hover {
@@ -259,19 +233,4 @@ section {
 .character-extras:hover {
     background-color: var(--heading-color); /* Accent color for hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-/* Footer Styles */
-footer {
-    background-color: var(--footer-background);
-    color: var(--text-color);
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 1rem;
 }
